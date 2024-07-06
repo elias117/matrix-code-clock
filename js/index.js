@@ -13,8 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .addEventListener("click", function () {
             MicroModal.show("modal-1");
         });
+    let selectedTimeZone = "America/Halifax";
+    document
+        .getElementById("submit-modal-button")
+        .addEventListener("click", function () {
+            selectedTimeZone = document.getElementById("timezone").value;
+            MicroModal.close("modal-1");
+        });
     const refreshTime = () => {
-        let selectedTimeZone = "America/Halifax";
         let now = dayjs().tz(selectedTimeZone);
         let time = now.format("HH:mm:ss");
         let date = now.format("dddd, MMMM D YYYY");
