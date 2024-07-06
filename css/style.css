@@ -41,8 +41,18 @@ body {
     color: #555;
 }
 
-.modal {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+.modal-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.modal-icon {
+    display: block;
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    background-color: white;
 }
 
 .modal__overlay {
@@ -79,7 +89,7 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.25;
-    color: #00449e;
+    color: black;
     box-sizing: border-box;
 }
 
@@ -134,8 +144,8 @@ body {
 }
 
 .modal__btn-primary {
-    background-color: #00449e;
-    color: #fff;
+    background-color: white;
+    color: black;
 }
 
 

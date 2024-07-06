@@ -11,7 +11,14 @@
         <div class="clock-container">
             <div class="timezone-row">
                 <div class="timezone" id="tz"></div>
-                <div><button id="open-modal">Open Modal</button></div>
+                <div>
+                    <button id="open-modal">
+                        <img
+                            class="modal-icon"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/2048px-Edit_icon_%28the_Noun_Project_30184%29.svg.png"
+                        />
+                    </button>
+                </div>
             </div>
             <div class="time" id="time"></div>
             <div class="date" id="date"></div>
@@ -26,7 +33,7 @@
                 aria-labelledby="modal-1-title"
             >
                 <header class="modal__header">
-                    <h2 class="modal__title" id="modal-1-title">Micromodal</h2>
+                    <h2 class="modal__title" id="modal-1-title">Select Timezone</h2>
                     <button
                         class="modal__close"
                         aria-label="Close modal"
@@ -34,24 +41,40 @@
                     ></button>
                 </header>
                 <main class="modal__content" id="modal-1-content">
-                    <p>
-                        Try hitting the <code>tab</code> key and notice how the
-                        focus stays within the modal itself. Also,
-                        <code>esc</code> to close modal.
-                    </p>
+                    <div class="modal-content-container">
+                        <div>
+                            <label for="timezone">Timezone</label>
+                            <select id="timezone" name="timezone">
+                                <option value="America/New_York">
+                                    America/New_York
+                                </option>
+                                <option value="America/Chicago">
+                                    America/Chicago
+                                </option>
+                                <option value="America/Denver">
+                                    America/Denver
+                                </option>
+                                <option value="America/Los_Angeles">
+                                    America/Los_Angeles
+                                </option>
+                                <option value="America/Anchorage">
+                                    America/Anchorage
+                                </option>
+                                <option value="Pacific/Honolulu">
+                                    Pacific/Honolulu
+                                </option>
+                                <option value="Pacific/Honolulu">
+                                    America/Halifax
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="modal__btn modal__btn-primary">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
                 </main>
-                <footer class="modal__footer">
-                    <button class="modal__btn modal__btn-primary">
-                        Continue
-                    </button>
-                    <button
-                        class="modal__btn"
-                        data-micromodal-close
-                        aria-label="Close this dialog window"
-                    >
-                        Close
-                    </button>
-                </footer>
             </div>
         </div>
     </div>
