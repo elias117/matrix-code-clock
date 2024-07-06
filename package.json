@@ -9,6 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dayjs": "^1.11.11"
+    "dayjs": "^1.11.11",
+    "dayjs-plugin-utc": "^0.1.2",
+    "webpack": "^5.92.1"
   }
 }
