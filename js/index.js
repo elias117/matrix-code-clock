@@ -8,9 +8,11 @@ dayjs.extend(timezone);
 
 document.addEventListener("DOMContentLoaded", function () {
     MicroModal.init();
-    document.getElementById("open-modal").addEventListener("click", function () {
-        MicroModal.show("modal-1");
-    });
+    document
+        .getElementById("open-modal")
+        .addEventListener("click", function () {
+            MicroModal.show("modal-1");
+        });
     const refreshTime = () => {
         let selectedTimeZone = "America/Halifax";
         let now = dayjs().tz(selectedTimeZone);
