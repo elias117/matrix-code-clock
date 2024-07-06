@@ -41,12 +41,6 @@ body {
     color: #555;
 }
 
-.modal-content-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
 .modal-icon {
     display: block;
     margin: 0 auto;
@@ -55,6 +49,12 @@ body {
     background-color: white;
 }
 
+.modal-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 .modal__overlay {
     position: fixed;
     top: 0;
