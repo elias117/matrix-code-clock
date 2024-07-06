@@ -146,6 +146,7 @@ body {
 .modal__btn-primary {
     background-color: white;
     color: black;
+    margin: auto;
 }
 
 
