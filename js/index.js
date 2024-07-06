@@ -1,11 +1,16 @@
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
+import MicroModal from "micromodal";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
 document.addEventListener("DOMContentLoaded", function () {
+    MicroModal.init();
+    document.getElementById("open-modal").addEventListener("click", function () {
+        MicroModal.show("modal-1");
+    });
     const refreshTime = () => {
         let selectedTimeZone = "America/Halifax";
         let now = dayjs().tz(selectedTimeZone);
