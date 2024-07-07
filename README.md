@@ -6,3 +6,5 @@ We will be covering this project in detail and building it as a class to explain
 
 
 We will deploy this project to a website and setup CI/CD for this project.
+
+This web clock is hosted on: http://www.matrixclock.net/ 
