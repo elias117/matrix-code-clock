@@ -8,7 +8,8 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
-.title{
+
+.title {
     margin-bottom: 20px;
 
 }
@@ -61,12 +62,13 @@ body {
 
 
 /* This all came from micromodal css styling guide. I found it on their website and I just copied and modified it slightly for my purpose */
-.modal-content-container{
+.modal-content-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
+
 .modal__overlay {
     position: fixed;
     top: 0;
